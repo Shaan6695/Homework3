@@ -13,8 +13,8 @@ class App:
         self.command_handler.register_command("greet", GreetCommand())
         self.command_handler.register_command("goodbye", GoodbyeCommand())
         self.command_handler.register_command("exit", ExitCommand())
-        self.command_handler.register_command("menu", MenuCommand)
 
+        
         print("Type 'exit' to exit.")
         while True:  #REPL Read, Evaluate, Process, Loop
             self.command_handler.execute_command(input(">>> ").strip())
